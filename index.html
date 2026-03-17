@@ -187,6 +187,52 @@
   }
   h2 em { font-style: italic; color: var(--sage); }
 
+  /* ── HERO EXP CARDS ── */
+  .hero-exp-cards { display: flex; flex-direction: column; gap: 1.2rem; }
+  .hero-exp-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.4rem 1.6rem;
+    border-left: 3px solid var(--sage);
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+  .hero-exp-card:nth-child(2) { border-left-color: var(--warm); }
+  .hero-exp-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,0,0,0.08); }
+  .hero-exp-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 0.5rem; margin-bottom: 0.8rem; flex-wrap: wrap;
+  }
+  .hero-exp-company {
+    font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700;
+  }
+  .hero-exp-role { font-size: 0.8rem; color: var(--warm); font-weight: 500; margin-top: 0.15rem; }
+  .hero-exp-date {
+    font-family: 'DM Mono', monospace; font-size: 0.7rem;
+    color: var(--ink3); white-space: nowrap; padding-top: 0.1rem;
+  }
+  .hero-exp-list { list-style: none; padding: 0; margin-bottom: 0.9rem; }
+  .hero-exp-list li {
+    font-size: 0.82rem; line-height: 1.6; color: var(--ink2);
+    padding: 0.15rem 0 0.15rem 1.1rem; position: relative;
+  }
+  .hero-exp-list li::before { content: '→'; position: absolute; left: 0; color: var(--sage); font-size: 0.72rem; }
+  .hero-exp-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .hero-exp-tags span {
+    padding: 0.18rem 0.55rem; border-radius: 4px;
+    font-size: 0.7rem; font-family: 'DM Mono', monospace;
+    background: rgba(92,122,106,0.1); color: var(--sage);
+  }
+  .hero-mini-stats {
+    display: flex; gap: 0.8rem;
+    background: var(--bg2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 1rem 1.2rem;
+  }
+  .mini-stat { flex: 1; text-align: center; }
+  .mini-num {
+    font-family: 'Playfair Display', serif; font-size: 1.2rem;
+    color: var(--ink); display: block;
+  }
+  .mini-label { font-size: 0.68rem; color: var(--ink3); margin-top: 0.2rem; display: block; }
+
   /* ── ABOUT ── */
   #about { background: var(--bg2); }
   .about-grid {
@@ -243,9 +289,10 @@
   }
   .exp-item {
     position: relative; margin-bottom: 3rem;
-    opacity: 0; transform: translateX(-20px);
+    opacity: 1; transform: none;
     transition: opacity 0.5s ease, transform 0.5s ease;
   }
+  .exp-item.animate-hidden { opacity: 0; transform: translateX(-20px); }
   .exp-item.visible { opacity: 1; transform: none; }
   .exp-dot {
     position: absolute; left: -2.4rem; top: 0.4rem;
@@ -496,23 +543,49 @@
   </div>
 
   <div class="hero-right">
-    <div class="stats-grid">
-      <div class="stat-card">
-        <div class="stat-num">6.0</div>
-        <div class="stat-label">UQ GPA<br>out of 7.0</div>
+    <div class="hero-exp-cards">
+
+      <div class="hero-exp-card">
+        <div class="hero-exp-top">
+          <div>
+            <div class="hero-exp-company">AICarer</div>
+            <div class="hero-exp-role">Software Developer + LLM Integration Intern</div>
+          </div>
+          <div class="hero-exp-date">Apr 2025 — Present</div>
+        </div>
+        <ul class="hero-exp-list">
+          <li>Built LLM pipeline converting wearable health-event data into caregiver-friendly summaries</li>
+          <li>Owned full data ingestion, preprocessing & structured logging for production reliability</li>
+          <li>Accelerometer-based movement analysis for non-technical users</li>
+        </ul>
+        <div class="hero-exp-tags">
+          <span>Python</span><span>LLM</span><span>Data Pipeline</span><span>Healthcare</span>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">7.0</div>
-        <div class="stat-label">IELTS Band Score<br>Listening 8.0</div>
+
+      <div class="hero-exp-card">
+        <div class="hero-exp-top">
+          <div>
+            <div class="hero-exp-company">UniLodge Toowong</div>
+            <div class="hero-exp-role">Residential Adviser</div>
+          </div>
+          <div class="hero-exp-date">Dec 2024 — Present</div>
+        </div>
+        <ul class="hero-exp-list">
+          <li>Community event planning and resident wellbeing support</li>
+          <li>Emergency management in a diverse, multicultural environment</li>
+        </ul>
+        <div class="hero-exp-tags">
+          <span>Community</span><span>Leadership</span><span>Brisbane</span>
+        </div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">4+</div>
-        <div class="stat-label">Professional<br>Certifications</div>
+
+      <div class="hero-mini-stats">
+        <div class="mini-stat"><span class="mini-num">6.0</span><span class="mini-label">UQ GPA / 7.0</span></div>
+        <div class="mini-stat"><span class="mini-num">IELTS 7.0</span><span class="mini-label">Listening 8.0</span></div>
+        <div class="mini-stat"><span class="mini-num">EA</span><span class="mini-label">Civil Engineer</span></div>
       </div>
-      <div class="stat-card">
-        <div class="stat-num">EA</div>
-        <div class="stat-label">Assessed Civil<br>Engineer ANZSCO</div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -548,7 +621,7 @@
       </div>
     </div>
 
-    <div class="ielts-card">
+    <div class="ielts-card" style="margin-top: 1.5rem;">
       <p class="ielts-title">IELTS Academic — Jan 2026</p>
       <div class="ielts-overall">
         <span class="big">7.0</span>
@@ -590,13 +663,24 @@
         <span class="exp-company">AICarer</span>
         <span class="exp-date">Apr 2025 — Present</span>
       </div>
-      <div class="exp-role">Software Developer + LLM Integration Intern</div>
+      <div class="exp-role">Software Developer + LLM Integration Intern · UQ Capstone Project</div>
       <ul class="exp-bullets">
-        <li>Integrated an LLM into the platform to convert wearable health-event payloads into caregiver-friendly summaries; designed prompts, guardrails, and fallbacks.</li>
-        <li>Owned the full data pipeline — ingestion, preprocessing, testing, and documentation — with retries, validation, and structured logging for production reliability.</li>
-        <li>Added accelerometer-based movement/trigger analysis and simplified metrics for non-technical users.</li>
-        <li>Established robust workflows for unit/async tests, changelogs, and continuous improvement processes.</li>
+        <li>Built an end-to-end personalised ML pipeline for elderly health anomaly detection using 101 days / 143,304 records of Garmin wearable data.</li>
+        <li>Designed a personalised Z-score anomaly detector with a 3-hour rolling baseline, identifying 3,509 statistical anomalies; filtered to 239 clinically relevant resting-state events using accelerometer thresholds.</li>
+        <li>Trained and compared Isolation Forest and One-Class SVM models (5 physiological features); achieved 40.5% high-confidence consensus — used as XGBoost labels.</li>
+        <li>Built an XGBoost predictive model with TimeSeriesSplit cross-validation to forecast health anomalies 15 minutes ahead; achieved Macro F1 = 0.53 with 10 engineered rolling features.</li>
+        <li>Integrated Gemini LLM to convert raw sensor anomaly payloads into empathetic plain-language caregiver alerts — the core clinical interface of the platform.</li>
+        <li>Owned full data pipeline — ingestion, cleaning (linear interpolation, artefact removal), EDA, structured logging, retries, and async test workflows.</li>
       </ul>
+      <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.8rem;">
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Python</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">XGBoost</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Isolation Forest</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">SVM</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Gemini LLM</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Pandas</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Time-Series ML</span>
+      </div>
     </div>
 
     <div class="exp-item">
@@ -841,11 +925,11 @@
     </div>
 
     <div class="contact-links">
-      <a href="mailto:benjaminlu1804@gmail.com" class="contact-link">
+      <a href="/cdn-cgi/l/email-protection#593b3c373338343037352c6861696d193e34383035773a3634" class="contact-link">
         <span class="cl-icon">✉️</span>
         <div>
           <span class="cl-label">Email</span>
-          <span class="cl-val">benjaminlu1804@gmail.com</span>
+          <span class="cl-val"><span class="__cf_email__" data-cfemail="88eaede6e2e9e5e1e6e4fdb9b0b8bcc8efe5e9e1e4a6ebe7e5">[email&#160;protected]</span></span>
         </div>
       </a>
       <a href="https://www.linkedin.com/in/lu-ben" target="_blank" class="contact-link">
@@ -871,7 +955,7 @@
   © 2026 Cheng-Yu (Ben) Lu · Master of Data Science · University of Queensland
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   // Animate bars when in view
   const bars = document.querySelectorAll('.bar-fill');
   const observer = new IntersectionObserver((entries) => {
@@ -885,24 +969,18 @@
 
   // Animate timeline items
   const expItems = document.querySelectorAll('.exp-item');
+  expItems.forEach(item => item.classList.add('animate-hidden'));
   const expObserver = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
       if (e.isIntersecting) {
-        setTimeout(() => e.target.classList.add('visible'), i * 120);
+        setTimeout(() => {
+          e.target.classList.remove('animate-hidden');
+          e.target.classList.add('visible');
+        }, i * 120);
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.1 });
   expItems.forEach(item => expObserver.observe(item));
 
   // Smooth nav shrink on scroll
-  window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    if (window.scrollY > 80) {
-      nav.style.padding = '0.7rem 3rem';
-    } else {
-      nav.style.padding = '1.2rem 3rem';
-    }
-  });
-</script>
-</body>
-</html>
+  wind
