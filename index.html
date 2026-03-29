@@ -530,6 +530,10 @@
   <div class="hero-bg-decoration"></div>
   <div class="hero-left">
     <p class="hero-eyebrow">Data Science × Civil Engineering</p>
+    <div style="display:inline-flex; align-items:center; gap:0.5rem; background:rgba(92,122,106,0.1); border:1px solid var(--sage2); border-radius:100px; padding:0.3rem 0.9rem; margin-bottom:1rem; font-size:0.75rem; color:var(--sage); font-family:'DM Mono',monospace;">
+      <span style="width:7px;height:7px;border-radius:50%;background:#5EC97A;display:inline-block;"></span>
+      485 Working Visa · Full Work Rights from Jul 2026
+    </div>
     <h1>Cheng-Yu<br><em>Ben</em> Lu</h1>
     <p class="hero-subtitle">Building intelligence at the intersection of data and the physical world.</p>
     <p class="hero-desc">
@@ -680,23 +684,23 @@
         <span class="exp-company">AICarer</span>
         <span class="exp-date">Apr 2025 — Present</span>
       </div>
-      <div class="exp-role">Software Developer + LLM Integration Intern · UQ Capstone Project</div>
+      <div class="exp-role">Data Analyst, Machine Learning & Software Developer · UQ Capstone Project</div>
       <ul class="exp-bullets">
-        <li>Built an end-to-end personalised ML pipeline for elderly health anomaly detection using 101 days / 143,304 records of Garmin wearable data.</li>
-        <li>Designed a personalised Z-score anomaly detector with a 3-hour rolling baseline, identifying 3,509 statistical anomalies; filtered to 239 clinically relevant resting-state events using accelerometer thresholds.</li>
-        <li>Trained and compared Isolation Forest and One-Class SVM models (5 physiological features); achieved 40.5% high-confidence consensus — used as XGBoost labels.</li>
-        <li>Built an XGBoost predictive model with TimeSeriesSplit cross-validation to forecast health anomalies 15 minutes ahead; achieved Macro F1 = 0.53 with 10 engineered rolling features.</li>
-        <li>Integrated Gemini LLM to convert raw sensor anomaly payloads into empathetic plain-language caregiver alerts — the core clinical interface of the platform.</li>
-        <li>Owned full data pipeline — ingestion, cleaning (linear interpolation, artefact removal), EDA, structured logging, retries, and async test workflows.</li>
+        <li>Built and deployed a machine learning health anomaly detection pipeline (Isolation Forest + XGBoost + Z-score) on 143,000+ rows of real-world Garmin wearable sensor data to support elderly independent living in Brisbane.</li>
+        <li>Integrated Gemini 2.5 Flash LLM to translate complex physiological risk scores into plain-language caregiver alerts, demonstrating ability to communicate technical findings to non-specialist stakeholders.</li>
+        <li>Designed end-to-end data reporting workflows covering ingestion, preprocessing (AWS EC2 / MongoDB via SSH Tunnel), Docker-containerised deployment, and automated daily/weekly health summaries.</li>
+        <li>Applied TimeSeriesSplit cross-validation to prevent data leakage, achieving Macro F1 of 0.53 on a highly imbalanced clinical dataset with no ground-truth labels.</li>
+        <li>Established robust workflows for unit/async tests, changelogs, retries, validation, and structured logging for production reliability.</li>
       </ul>
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.8rem;">
         <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Python</span>
         <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">XGBoost</span>
         <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Isolation Forest</span>
         <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">SVM</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Gemini LLM</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Pandas</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Time-Series ML</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Gemini 2.5 Flash</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">AWS EC2</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">MongoDB</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Docker</span>
       </div>
     </div>
 
@@ -724,12 +728,12 @@
       <div class="exp-dot"></div>
       <div class="exp-meta">
         <span class="exp-company">UniLodge Toowong</span>
-        <span class="exp-date">Dec 2024 — Present</span>
+        <span class="exp-date">Dec 2024 — Oct 2025</span>
       </div>
       <div class="exp-role">Residential Adviser</div>
       <ul class="exp-bullets">
-        <li>Planned and promoted 40+ community events; analysed resident feedback and attendance data to improve future engagement outcomes.</li>
-        <li>Provided welfare support to 500+ residents, demonstrating strong interpersonal communication and stakeholder management in a high-pressure environment.</li>
+        <li>Planned and promoted 40+ community events for a culturally diverse residential population of 500+, building strong listening, empathy, and cross-cultural communication skills.</li>
+        <li>Analysed resident feedback and attendance data to improve engagement outcomes, applying a data-informed approach to community management.</li>
         <li>Managed emergency situations and maintained a safe residential environment.</li>
       </ul>
     </div>
@@ -740,12 +744,12 @@
         <span class="exp-company">Zhong Fu Construction Co.</span>
         <span class="exp-date">Oct 2023 — Jun 2024</span>
       </div>
-      <div class="exp-role">Construction Engineer — Project Coordinator</div>
+      <div class="exp-role">Construction Engineer — Project Controls & Site Management</div>
       <ul class="exp-bullets">
-        <li>Stakeholder management across 100+ parties — government officials, suppliers, and contractors.</li>
-        <li>Used Excel and Project for project tracking, cost estimation, and material planning (experienced in P6).</li>
-        <li>Built a historical-data model that reduced procurement errors by 10%.</li>
-        <li>Worked on-site with 2 licensed civil engineers; managed time, cost, quality, and safety at each delivery phase.</li>
+        <li>Managed 100+ stakeholders across government officials, suppliers, and contractors throughout all project delivery phases, including cost, schedule, quality, and safety management.</li>
+        <li>Utilised advanced Excel and MS Project for project scheduling, cost estimation, and material planning; reduced procurement errors by 10% through data-driven forecasting.</li>
+        <li>Worked directly with 2 licensed civil engineers, conducting daily quality inspections and reporting project performance against time, cost, and safety KPIs.</li>
+        <li>Coordinated cross-functional teams across procurement, logistics, and construction to maintain programme delivery under budget constraints.</li>
       </ul>
     </div>
 
@@ -778,31 +782,33 @@
       <div class="skill-pills">
         <span class="pill">Python</span>
         <span class="pill">Pandas</span>
-        <span class="pill">EDA</span>
+        <span class="pill">Scikit-learn</span>
         <span class="pill">R</span>
         <span class="pill">SQL</span>
         <span class="pill">C#</span>
-        <span class="pill">Tableau</span>
+        <span class="pill">GitHub</span>
       </div>
     </div>
     <div class="skill-group">
       <div class="skill-group-title"><span class="icon">🤖</span> AI / ML</div>
       <div class="skill-pills">
-        <span class="pill">Machine Learning</span>
+        <span class="pill">XGBoost</span>
+        <span class="pill">Isolation Forest</span>
         <span class="pill">LLM Integration</span>
-        <span class="pill">OLS Regression</span>
         <span class="pill">Prompt Engineering</span>
+        <span class="pill">Time-Series ML</span>
         <span class="pill">FHIR</span>
       </div>
     </div>
     <div class="skill-group">
       <div class="skill-group-title"><span class="icon">☁️</span> Cloud & Data Infra</div>
       <div class="skill-pills">
+        <span class="pill">AWS EC2</span>
+        <span class="pill">Docker</span>
+        <span class="pill">MongoDB</span>
         <span class="pill">Microsoft Azure</span>
-        <span class="pill">Cloud Computing</span>
         <span class="pill">PostgreSQL</span>
-        <span class="pill">Database Design</span>
-        <span class="pill">Social Media Analytics</span>
+        <span class="pill">SSH Tunnel</span>
       </div>
     </div>
     <div class="skill-group">
@@ -819,10 +825,11 @@
       <div class="skill-group-title"><span class="icon">📊</span> Analysis & Reporting</div>
       <div class="skill-pills">
         <span class="pill">Advanced Excel</span>
+        <span class="pill">Excel VBA</span>
         <span class="pill">Cost Estimation</span>
-        <span class="pill">Financial Analysis</span>
+        <span class="pill">Statistical Analysis</span>
         <span class="pill">Data Visualisation</span>
-        <span class="pill">Technical Writing</span>
+        <span class="pill">Google Data Studio</span>
       </div>
     </div>
     <div class="skill-group">
@@ -847,15 +854,18 @@
     <div class="project-card">
       <div class="project-num">01</div>
       <div class="project-title">Panacea — AI Clinical Decision Support</div>
+      <div class="project-desc" style="margin-bottom:0.6rem;">
+        <span style="font-size:0.78rem; color:var(--ink3); font-family:'DM Mono',monospace;">UQ × Metro South Health · Aug–Nov 2025</span>
+      </div>
       <div class="project-desc">
-        Digital health project built with FHIR and Metro South Health. An AI-enhanced clinical decision support
-        system combining health data standards with machine learning to assist medical professionals.
+        Built a clinical web application for drug-drug interaction analysis combining PubMed references with Gemini AI, meeting real-world FHIR regulatory standards. Worked in a multidisciplinary team across clinical, software, and data domains to deliver a production tool under tight academic and regulatory constraints.
       </div>
       <div class="project-tags">
         <span class="project-tag">FHIR</span>
-        <span class="project-tag">Python</span>
-        <span class="project-tag">LLM</span>
+        <span class="project-tag">Gemini AI</span>
+        <span class="project-tag">PubMed API</span>
         <span class="project-tag">Healthcare</span>
+        <span class="project-tag">Metro South Health</span>
       </div>
     </div>
 
@@ -935,22 +945,25 @@
   </div>
   <div class="edu-cards">
     <div class="edu-card">
-      <div class="edu-year">2024 — Expected 2026</div>
+      <div class="edu-year">Jul 2024 — Expected Jul 2026</div>
       <div class="edu-degree">Master of Data Science</div>
       <div class="edu-school">University of Queensland, Brisbane</div>
       <div class="edu-gpa">⬡ GPA 6.0 / 7.0</div>
+      <p style="font-size:0.78rem; color:var(--ink3); margin-top:0.8rem; line-height:1.6;">Capstone: AiCarer ML Pipeline · Digital Health: Panacea (Metro South Health) · Industry Masterclass: Monitor Deloitte</p>
     </div>
     <div class="edu-card">
-      <div class="edu-year">2021 — 2023</div>
+      <div class="edu-year">Sep 2021 — Aug 2023</div>
       <div class="edu-degree">Master of Civil Engineering</div>
       <div class="edu-school">National Taipei University of Technology</div>
       <div class="edu-gpa">⬡ GPA 4.0 / 4.0</div>
+      <p style="font-size:0.78rem; color:var(--ink3); margin-top:0.8rem; line-height:1.6;">Thesis: BIM & Shop Drawings Automation (C# + Revit + Azure)</p>
     </div>
     <div class="edu-card">
-      <div class="edu-year">Completed June 2021</div>
-      <div class="edu-degree">Bachelor — Civil Engineering</div>
+      <div class="edu-year">Sep 2017 — Jun 2021</div>
+      <div class="edu-degree">Bachelor of Civil Engineering</div>
       <div class="edu-school">Tamkang University, Taiwan</div>
       <div class="edu-gpa">⬡ EA Assessed</div>
+      <p style="font-size:0.78rem; color:var(--ink3); margin-top:0.8rem; line-height:1.6;">Internships: Zhong Fu Construction · Lin Ta-Chun Architects</p>
     </div>
   </div>
 
