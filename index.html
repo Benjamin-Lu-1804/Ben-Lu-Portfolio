@@ -7,18 +7,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #F7F4EF;
-    --bg2: #EDE9E2;
-    --ink: #1A1814;
-    --ink2: #4A4640;
-    --ink3: #8A8480;
-    --sage: #5C7A6A;
-    --sage2: #7A9E8C;
-    --warm: #C4875A;
-    --warm2: #E8A878;
-    --gold: #B89B6A;
+    --bg: #F2F8FB;
+    --bg2: #E4EFF5;
+    --ink: #0D3A52;
+    --ink2: #2A5068;
+    --ink3: #5B8FA8;
+    --sage: #2A7FA8;
+    --sage2: #5BA3C2;
+    --warm: #1A9B8A;
+    --warm2: #3DBFAD;
+    --gold: #1A5F80;
     --card: #FFFFFF;
-    --border: #D8D4CC;
+    --border: #B8D9E8;
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -37,7 +37,7 @@
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     display: flex; justify-content: space-between; align-items: center;
     padding: 1.2rem 3rem;
-    background: rgba(247,244,239,0.88);
+    background: rgba(242,248,251,0.92);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     transition: all 0.3s;
@@ -77,7 +77,7 @@
     transform: translateY(-50%);
     width: 600px; height: 600px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(92,122,106,0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(42,127,168,0.13) 0%, transparent 70%);
     pointer-events: none;
   }
   .hero-left {
@@ -124,7 +124,7 @@
     font-family: 'DM Sans', sans-serif;
   }
   .btn-primary {
-    background: var(--ink); color: var(--bg);
+    background: #0D3A52; color: var(--bg);
   }
   .btn-primary:hover { background: var(--sage); transform: translateY(-2px); }
   .btn-outline {
@@ -219,7 +219,7 @@
   .hero-exp-tags span {
     padding: 0.18rem 0.55rem; border-radius: 4px;
     font-size: 0.7rem; font-family: 'DM Mono', monospace;
-    background: rgba(92,122,106,0.1); color: var(--sage);
+    background: rgba(42,127,168,0.1); color: var(--sage);
   }
   .hero-mini-stats {
     display: flex; gap: 0.8rem;
@@ -254,8 +254,8 @@
     background: var(--card); border: 1px solid var(--border);
     color: var(--ink2);
   }
-  .badge.sage { background: rgba(92,122,106,0.12); border-color: var(--sage2); color: var(--sage); }
-  .badge.warm { background: rgba(196,135,90,0.12); border-color: var(--warm2); color: var(--warm); }
+  .badge.sage { background: rgba(42,127,168,0.12); border-color: var(--sage2); color: var(--sage); }
+  .badge.warm { background: rgba(26,155,138,0.12); border-color: var(--warm2); color: var(--warm); }
 
   .ielts-card {
     background: var(--card); border: 1px solid var(--border);
@@ -298,11 +298,11 @@
     position: absolute; left: -2.4rem; top: 0.4rem;
     width: 10px; height: 10px; border-radius: 50%;
     background: var(--sage); border: 2px solid var(--bg);
-    box-shadow: 0 0 0 3px rgba(92,122,106,0.25);
+    box-shadow: 0 0 0 3px rgba(42,127,168,0.25);
   }
   .exp-item:nth-child(2) .exp-dot { background: var(--warm); box-shadow: 0 0 0 3px rgba(196,135,90,0.25); }
   .exp-item:nth-child(3) .exp-dot { background: var(--gold); box-shadow: 0 0 0 3px rgba(184,155,106,0.25); }
-  .exp-item:nth-child(4) .exp-dot { background: var(--sage2); box-shadow: 0 0 0 3px rgba(122,158,140,0.25); }
+  .exp-item:nth-child(4) .exp-dot { background: var(--sage2); box-shadow: 0 0 0 3px rgba(91,163,194,0.25); }
   .exp-meta { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.3rem; flex-wrap: wrap; gap: 0.5rem; }
   .exp-company { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; }
   .exp-date {
@@ -367,7 +367,7 @@
   .project-card::after {
     content: ''; position: absolute; top: 0; right: 0;
     width: 80px; height: 80px;
-    background: radial-gradient(circle at top right, rgba(92,122,106,0.1), transparent);
+    background: radial-gradient(circle at top right, rgba(42,127,168,0.1), transparent);
     pointer-events: none;
   }
   .project-num {
@@ -388,7 +388,7 @@
   .project-tag {
     padding: 0.2rem 0.6rem; border-radius: 4px;
     font-size: 0.72rem; font-weight: 500;
-    background: rgba(92,122,106,0.1); color: var(--sage);
+    background: rgba(42,127,168,0.1); color: var(--sage);
     font-family: 'DM Mono', monospace;
   }
 
@@ -413,7 +413,7 @@
   .edu-gpa {
     display: inline-flex; align-items: center; gap: 0.4rem;
     padding: 0.25rem 0.7rem; border-radius: 100px;
-    background: rgba(92,122,106,0.1); color: var(--sage);
+    background: rgba(42,127,168,0.1); color: var(--sage);
     font-size: 0.78rem; font-family: 'DM Mono', monospace;
   }
 
@@ -448,24 +448,24 @@
   .contact-link {
     display: flex; align-items: center; gap: 1rem;
     padding: 1rem 1.4rem; border-radius: 8px;
-    background: rgba(255,255,255,0.06);
+    background: rgba(255,255,255,0.08);
     border: 1px solid rgba(255,255,255,0.1);
     text-decoration: none; color: var(--bg);
     transition: all 0.25s; font-size: 0.9rem;
   }
-  .contact-link:hover { background: rgba(92,122,106,0.25); border-color: var(--sage2); transform: translateX(6px); }
+  .contact-link:hover { background: rgba(42,127,168,0.25); border-color: var(--sage2); transform: translateX(6px); }
   .contact-link .cl-icon { font-size: 1.2rem; width: 1.5rem; text-align: center; }
   .contact-link .cl-label { font-size: 0.72rem; color: rgba(247,244,239,0.5); display: block; font-family: 'DM Mono', monospace; letter-spacing: 0.08em; }
   .contact-link .cl-val { font-size: 0.9rem; color: var(--bg); }
 
   .availability {
-    background: rgba(92,122,106,0.2); border: 1px solid var(--sage);
+    background: rgba(42,127,168,0.2); border: 1px solid var(--sage2);
     border-radius: 10px; padding: 1.5rem;
     margin-top: 1.5rem;
   }
   .avail-dot {
     display: inline-block; width: 8px; height: 8px;
-    border-radius: 50%; background: #5EC97A;
+    border-radius: 50%; background: #3DBFAD;
     margin-right: 0.5rem;
     animation: pulse 2s infinite;
   }
@@ -474,7 +474,7 @@
 
   /* ── FOOTER ── */
   footer {
-    background: var(--ink); border-top: 1px solid rgba(255,255,255,0.08);
+    background: #0A2D40; border-top: 1px solid rgba(255,255,255,0.08);
     padding: 1.5rem 5rem; text-align: center;
     font-size: 0.78rem; color: rgba(247,244,239,0.3);
     font-family: 'DM Mono', monospace;
@@ -486,8 +486,8 @@
     to { opacity: 1; transform: none; }
   }
   @keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(94,201,122,0.5); }
-    50% { box-shadow: 0 0 0 5px rgba(94,201,122,0); }
+    0%, 100% { box-shadow: 0 0 0 0 rgba(61,191,173,0.5); }
+    50% { box-shadow: 0 0 0 5px rgba(61,191,173,0); }
   }
 
   /* ── MOBILE ── */
@@ -530,7 +530,7 @@
   <div class="hero-bg-decoration"></div>
   <div class="hero-left">
     <p class="hero-eyebrow">Data Science × Civil Engineering</p>
-    <div style="display:inline-flex; align-items:center; gap:0.5rem; background:rgba(92,122,106,0.1); border:1px solid var(--sage2); border-radius:100px; padding:0.3rem 0.9rem; margin-bottom:1rem; font-size:0.75rem; color:var(--sage); font-family:'DM Mono',monospace;">
+    <div style="display:inline-flex; align-items:center; gap:0.5rem; background:rgba(42,127,168,0.1); border:1px solid var(--sage2); border-radius:100px; padding:0.3rem 0.9rem; margin-bottom:1rem; font-size:0.75rem; color:var(--sage); font-family:'DM Mono',monospace;">
       <span style="width:7px;height:7px;border-radius:50%;background:#5EC97A;display:inline-block;"></span>
       485 Working Visa · Full Work Rights from Jul 2026
     </div>
@@ -567,7 +567,7 @@
         </div>
       </div>
 
-      <div class="hero-exp-card" style="border-left-color: var(--gold);">
+      <div class="hero-exp-card" style="border-left-color: var(--warm);">
         <div class="hero-exp-top">
           <div>
             <div class="hero-exp-company">Engineers Australia</div>
@@ -693,14 +693,14 @@
         <li>Established robust workflows for unit/async tests, changelogs, retries, validation, and structured logging for production reliability.</li>
       </ul>
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.8rem;">
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Python</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">XGBoost</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Isolation Forest</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">SVM</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Gemini 2.5 Flash</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">AWS EC2</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">MongoDB</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Docker</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">Python</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">XGBoost</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">Isolation Forest</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">SVM</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">Gemini 2.5 Flash</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">AWS EC2</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">MongoDB</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">Docker</span>
       </div>
     </div>
 
@@ -717,10 +717,10 @@
         <li>Demonstrates internationally recognised engineering competency and eligibility for skilled migration pathways in Australia.</li>
       </ul>
       <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-top:0.8rem;">
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">ANZSCO 233211</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">AQF Masters</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">Skill Level 1</span>
-        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(92,122,106,0.1); color:var(--sage);">MSA Accord</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">ANZSCO 233211</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">AQF Masters</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">Skill Level 1</span>
+        <span style="padding:0.2rem 0.6rem; border-radius:4px; font-size:0.72rem; font-family:'DM Mono',monospace; background:rgba(42,127,168,0.1); color:var(--sage);">MSA Accord</span>
       </div>
     </div>
 
@@ -860,12 +860,36 @@
       <div class="project-desc">
         Built a clinical web application for drug-drug interaction analysis combining PubMed references with Gemini AI, meeting real-world FHIR regulatory standards. Worked in a multidisciplinary team across clinical, software, and data domains to deliver a production tool under tight academic and regulatory constraints.
       </div>
-      <div class="project-tags">
+      <div class="project-tags" style="margin-bottom:1rem;">
         <span class="project-tag">FHIR</span>
         <span class="project-tag">Gemini AI</span>
         <span class="project-tag">PubMed API</span>
         <span class="project-tag">Healthcare</span>
         <span class="project-tag">Metro South Health</span>
+      </div>
+      <div id="panacea-demo-wrap">
+        <button onclick="togglePanacea()" id="panacea-btn" style="
+          display:inline-flex; align-items:center; gap:0.5rem;
+          padding:0.6rem 1.2rem; border-radius:6px;
+          background:var(--sage); color:#fff;
+          border:none; cursor:pointer; font-size:0.82rem;
+          font-family:'DM Sans',sans-serif; font-weight:500;
+          transition:all 0.2s; letter-spacing:0.03em;
+        " onmouseover="this.style.opacity='0.85'" onmouseout="this.style.opacity='1'">
+          ▶ &nbsp;Live Demo
+        </button>
+        <div id="panacea-frame" style="display:none; margin-top:1rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+            <span style="font-family:'DM Mono',monospace; font-size:0.7rem; color:var(--ink3);">404noerrors.streamlit.app</span>
+            <a href="https://404noerrors.streamlit.app/" target="_blank" style="font-size:0.72rem; color:var(--sage); text-decoration:none; font-family:'DM Mono',monospace;">↗ Open full screen</a>
+          </div>
+          <iframe
+            src="https://404noerrors.streamlit.app/"
+            style="width:100%; height:480px; border:1px solid var(--border); border-radius:10px; background:#fff;"
+            loading="lazy"
+            title="Panacea — AI Clinical Decision Support">
+          </iframe>
+        </div>
       </div>
     </div>
 
@@ -891,12 +915,24 @@
         Conducted exploratory data analysis using Python & Pandas, then built an OLS regression model
         to identify factors influencing social adaptation outcomes in a population study.
       </div>
-      <div class="project-tags">
+      <div class="project-tags" style="margin-bottom:1rem;">
         <span class="project-tag">Pandas</span>
         <span class="project-tag">OLS Regression</span>
         <span class="project-tag">EDA</span>
         <span class="project-tag">Statistics</span>
       </div>
+      <a href="https://canva.link/2xpo83f6zyyblwn" target="_blank" style="
+        display:inline-flex; align-items:center; gap:0.5rem;
+        padding:0.6rem 1.2rem; border-radius:6px;
+        background:transparent; color:var(--sage);
+        border:1.5px solid var(--sage); cursor:pointer;
+        font-size:0.82rem; font-family:'DM Sans',sans-serif;
+        font-weight:500; text-decoration:none; letter-spacing:0.03em;
+        transition:all 0.2s;
+      " onmouseover="this.style.background='var(--sage)';this.style.color='#fff';"
+         onmouseout="this.style.background='transparent';this.style.color='var(--sage)';">
+        ↗ &nbsp;View Report (Canva)
+      </a>
     </div>
 
     <div class="project-card">
@@ -934,6 +970,35 @@
         <span class="project-tag">Brisbane2032Olympics</span>
       </div>
     </div>
+
+    <div class="project-card">
+      <div class="project-num">06</div>
+      <div class="project-title">Artists Copyright Case Against Stability AI et al.</div>
+      <div class="project-desc" style="margin-bottom:0.6rem;">
+        <span style="font-size:0.78rem; color:var(--ink3); font-family:'DM Mono',monospace;">Legal & AI Ethics Analysis · UQ</span>
+      </div>
+      <div class="project-desc">
+        Analysed the landmark copyright case alleging unauthorised use of copyrighted artworks for training generative AI models. Examined legal, ethical, and policy implications of AI training data practices, fair use doctrine, and the responsibilities of AI developers toward original creators.
+      </div>
+      <div class="project-tags" style="margin-bottom:1rem;">
+        <span class="project-tag">AI Ethics</span>
+        <span class="project-tag">Copyright Law</span>
+        <span class="project-tag">Generative AI</span>
+        <span class="project-tag">Policy</span>
+      </div>
+      <a href="https://canva.link/pgfllk2v2peibud" target="_blank" style="
+        display:inline-flex; align-items:center; gap:0.5rem;
+        padding:0.6rem 1.2rem; border-radius:6px;
+        background:transparent; color:var(--sage);
+        border:1.5px solid var(--sage); cursor:pointer;
+        font-size:0.82rem; font-family:'DM Sans',sans-serif;
+        font-weight:500; text-decoration:none; letter-spacing:0.03em;
+        transition:all 0.2s;
+      " onmouseover="this.style.background='var(--sage)';this.style.color='#fff';"
+         onmouseout="this.style.background='transparent';this.style.color='var(--sage)';">
+        ↗ &nbsp;View Report (Canva)
+      </a>
+    </div>
   </div>
 </section>
 
@@ -949,7 +1014,24 @@
       <div class="edu-degree">Master of Data Science</div>
       <div class="edu-school">University of Queensland, Brisbane</div>
       <div class="edu-gpa">⬡ GPA 6.0 / 7.0</div>
-      <p style="font-size:0.78rem; color:var(--ink3); margin-top:0.8rem; line-height:1.6;">Capstone: AiCarer ML Pipeline · Digital Health: Panacea (Metro South Health) · Industry Masterclass: Monitor Deloitte</p>
+      <div style="display:flex; gap:0.6rem; margin-top:1rem; flex-wrap:wrap;">
+        <div style="flex:1; min-width:60px; background:rgba(42,127,168,0.12); border:1px solid var(--sage2); border-radius:8px; padding:0.6rem 0.5rem; text-align:center;">
+          <div style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--sage); line-height:1;">3</div>
+          <div style="font-size:0.68rem; color:var(--sage); font-family:'DM Mono',monospace; margin-top:0.2rem; font-weight:500;">HD</div>
+          <div style="font-size:0.62rem; color:var(--ink3); margin-top:0.1rem;">High Distinction</div>
+        </div>
+        <div style="flex:1; min-width:60px; background:rgba(91,163,194,0.1); border:1px solid var(--gold); border-radius:8px; padding:0.6rem 0.5rem; text-align:center;">
+          <div style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--gold); line-height:1;">6</div>
+          <div style="font-size:0.68rem; color:var(--gold); font-family:'DM Mono',monospace; margin-top:0.2rem; font-weight:500;">D</div>
+          <div style="font-size:0.62rem; color:var(--ink3); margin-top:0.1rem;">Distinction</div>
+        </div>
+        <div style="flex:1; min-width:60px; background:rgba(26,155,138,0.08); border:1px solid var(--warm2); border-radius:8px; padding:0.6rem 0.5rem; text-align:center;">
+          <div style="font-family:'Playfair Display',serif; font-size:1.4rem; color:var(--warm); line-height:1;">3</div>
+          <div style="font-size:0.68rem; color:var(--warm); font-family:'DM Mono',monospace; margin-top:0.2rem; font-weight:500;">C</div>
+          <div style="font-size:0.62rem; color:var(--ink3); margin-top:0.1rem;">Credit</div>
+        </div>
+      </div>
+      <p style="font-size:0.75rem; color:var(--ink3); margin-top:0.8rem; line-height:1.6;">Capstone: AiCarer ML Pipeline · Digital Health: Panacea (Metro South Health) · Industry Masterclass: Monitor Deloitte</p>
     </div>
     <div class="edu-card">
       <div class="edu-year">Sep 2021 — Aug 2023</div>
@@ -1054,4 +1136,23 @@
   expItems.forEach(item => expObserver.observe(item));
 
   // Smooth nav shrink on scroll
-  wind
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 80) {
+      nav.style.padding = '0.7rem 3rem';
+    } else {
+      nav.style.padding = '1.2rem 3rem';
+    }
+  });
+
+  function togglePanacea() {
+    const frame = document.getElementById('panacea-frame');
+    const btn = document.getElementById('panacea-btn');
+    const isOpen = frame.style.display !== 'none';
+    frame.style.display = isOpen ? 'none' : 'block';
+    btn.innerHTML = isOpen ? '&#9654; &nbsp;Live Demo' : '&#10005; &nbsp;Close Demo';
+    btn.style.background = isOpen ? 'var(--sage)' : 'var(--ink)';
+  }
+</script>
+</body>
+</html>
